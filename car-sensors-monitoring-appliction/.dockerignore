@@ -1,0 +1,25 @@
+# Ignore node_modules
+node_modules
+
+# Ignore logs
+logs
+*.log
+
+# Ignore environment variables
+.env
+
+# Ignore coverage reports
+coverage
+
+# Ignore build directories
+dist
+build
+
+# Ignore Dockerfile and docker-compose files
+Dockerfile
+docker-compose.yml
+
+# Ignore other unnecessary files
+.git
+.gitignore
+.vscode

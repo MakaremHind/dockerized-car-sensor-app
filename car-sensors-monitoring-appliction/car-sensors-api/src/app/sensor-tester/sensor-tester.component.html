@@ -1,0 +1,67 @@
+<div class="main-container">
+  <!-- Form Container -->
+  <div class="form-container">
+    <h1>Car Sensors API Tester</h1>
+
+    <!-- Create Car Sensor Data Section -->
+    <div class="section">
+      <h2>Create Car Sensor Data</h2>
+      <label>Car Name:</label>
+      <input [(ngModel)]="createData.model" type="text" placeholder="Enter car name" />
+
+      <label>Year:</label>
+      <input [(ngModel)]="createData.year" type="number" placeholder="Enter year" />
+
+      <label>Sensor Type:</label>
+      <input [(ngModel)]="createData.sensorType" type="text" placeholder="Enter sensor type" />
+
+      <label>Sensor Value:</label>
+      <input [(ngModel)]="createData.sensorValue" type="number" placeholder="Enter value" />
+
+      <button (click)="createCarSensorData()">Create</button>
+    </div>
+
+    <!-- Retrieve All Car Sensor Data Section -->
+    <div class="section">
+      <h2>Retrieve All Car Sensor Data</h2>
+      <button (click)="getAllCarSensors()">Get All</button>
+    </div>
+
+    <!-- Retrieve Car Sensor Data by ID Section -->
+    <div class="section">
+      <h2>Retrieve Car Sensor Data by ID</h2>
+      <label>Car ID:</label>
+      <input [(ngModel)]="retrieveId" type="text" placeholder="Enter car ID" />
+      <button (click)="getCarSensorById()">Get by ID</button>
+    </div>
+
+    <!-- Update Car Sensor Data Section -->
+    <div class="section">
+      <h2>Update Car Sensor Data</h2>
+      <label>Car ID:</label>
+      <input [(ngModel)]="updateData.id" type="text" placeholder="Enter car ID" />
+
+      <label>Sensor Type:</label>
+      <input [(ngModel)]="updateData.sensorType" type="text" placeholder="Enter sensor type" />
+
+      <label>Sensor Value:</label>
+      <input [(ngModel)]="updateData.sensorValue" type="number" placeholder="Enter value" />
+
+      <button (click)="updateCarSensorData()">Update</button>
+    </div>
+
+    <!-- Delete Car Sensor Data Section -->
+    <div class="section">
+      <h2>Delete Car Sensor Data</h2>
+      <label>Car ID:</label>
+      <input [(ngModel)]="deleteId" type="text" placeholder="Enter car ID" />
+      <button (click)="deleteCarSensorData()">Delete</button>
+    </div>
+  </div>
+
+  <!-- Response Container -->
+  <div class="response-container">
+    <h3>Response:</h3>
+    <div id="response">{{ response | json }}</div>
+  </div>
+</div>
