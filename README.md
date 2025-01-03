@@ -21,7 +21,7 @@ This project is a multi-container application for monitoring car sensors, built 
 
 ### 1. Clone the Repository:
 ```bash
-git clone [<repository-url>](https://github.com/MakaremHind/dockerized-car-sensor-app)
+git clone https://github.com/MakaremHind/dockerized-car-sensor-app
 cd car-sensors-monitoring-appliction
 ```
 
